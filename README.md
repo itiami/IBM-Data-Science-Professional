@@ -5,102 +5,42 @@
 
 ## Project Overview
 This is a Java project developed as part of an assignment for Duke University.
+# IBM Data Science Professional Certificate
 
-## Build Method
-The project is built using **Gradle** with DSL **Groovy**.
+This repository contains project work and learning resources associated with the **IBM Data Science Professional Certificate**. The project environment is built using the **Anaconda® Distribution on Cloud**, providing a powerful and flexible environment for data science and machine learning.
 
----
+## 🌐 Platform
 
-## IntelliJ Configuration
-To configure IntelliJ IDEA for this project, follow these settings:
+- **Environment**: Anaconda® Distribution  
+- **Deployment**: Cloud-based (Jupyter Notebooks via Anaconda Cloud)
 
-### Gradle Configuration
-1. Navigate to: **Settings > Build, Execution, Deployment > Gradle**
-2. Set the following options:
-    - **Build and run using**: Gradle
-    - **Run tests using**: Gradle
-    - **Use Gradle From**: Specified Location - `C:/SDK/Gradle_SDK/gradle-8.12.1`
-    - **Gradle JVM**: Oracle OpenJDK version `23.02`
+## 📚 Course Content
 
-### Project Structure
-1. **Project SDK**: Oracle OpenJDK version `23.02`
-2. **Language Level**: 19 - No new language features
+The professional certificate program is composed of 12 comprehensive courses:
 
-### Run Configuration
-1. Go to: **Run > Edit Configuration**
-2. Select **Build and Run Java 23**
+1. **What is Data Science?**  
+2. **Tools for Data Science**  
+3. **Data Science Methodology**  
+4. **Python for Data Science, AI & Development**  
+5. **Python Project for Data Science**  
+6. **Databases and SQL for Data Science with Python**  
+7. **Data Analysis with Python**  
+8. **Data Visualization with Python**  
+9. **Machine Learning with Python**  
+10. **Applied Data Science Capstone**  
+11. **Generative AI: Elevate Your Data Science Career**  
+12. **Data Scientist Career Guide and Interview Preparation**
 
----
+## 🚀 Getting Started
 
-## Gradle Configuration
+To reproduce or interact with the project environment:
 
-### `gradle-wrapper.properties`
-```
-distributionBase=GRADLE_USER_HOME
-distributionPath=wrapper/dists
-distributionUrl=https\://services.gradle.org/distributions/gradle-8.12.1-bin.zip
-zipStoreBase=GRADLE_USER_HOME
-zipStorePath=wrapper/dists
-org.gradle.logging.level=INFO
-```
-
-### `settings.gradle`
-```
-rootProject.name = 'Java_Duke_University'
-```
-
-### `build.gradle`
-```groovy
-plugins {
-    id 'application'
-}
-
-group 'co.wali'
-version '1.0-SNAPSHOT'
-apply plugin: 'application'
-
-application {
-    // Define the main class for the application.
-    mainClass = 'co.wali.Main'
-}
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation(files("libs/courserajava.jar"))
-//    implementation(files("libs/apache-csv.jar"))
-    implementation 'org.apache.commons:commons-csv:1.13.0'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation 'org.jsoup:jsoup:1.18.1'
-}
-
-test {
-    useJUnitPlatform()
-}
-```
-
----
-
-## How to Build and Run
-### Build the project:
-```sh
-gradle check
-```
-
-### Run the project:
-```sh
-gradle run
-```
-
-### Run Tests:
-```sh
-gradle test
-```
-
----
+1. Install Anaconda or use [Anaconda Cloud](https://anaconda.org/).
+2. Launch Jupyter Notebook or JupyterLab.
+3. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/ibm-data-science-certificate.git
+   cd ibm-data-science-certificate
 
 ## License
 This project is developed for educational purposes as part of a Duke University assignment. Redistribution and modification are subject to course guidelines.
