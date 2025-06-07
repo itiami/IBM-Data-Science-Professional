@@ -1,11 +1,11 @@
-# Java Project for Duke University Assignment
+# Python and R Project for IBM Data Science Professional Certificate Assignment
+![IBM Data Science](https://media.licdn.com/dms/image/v2/D4D22AQHjiNdbg6Qbyg/feedshare-shrink_800/B4DZSipl5HG4Ak-/0/1737895600433?e=1750291200&v=beta&t=o2XJh4fJ89Gysgmi9vGIyZlu8qkhX8ifT7Ysd27Z5jw)
+
 
 ## Author
 **ABDULLAH AL Numan**
 
 ## Project Overview
-This is a Java project developed as part of an assignment for Duke University.
-# IBM Data Science Professional Certificate
 
 This repository contains project work and learning resources associated with the **IBM Data Science Professional Certificate**. The project environment is built using the **Anaconda® Distribution on Cloud**, providing a powerful and flexible environment for data science and machine learning.
 
