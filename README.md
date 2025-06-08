@@ -1,7 +1,6 @@
 # Python and R Project for IBM Data Science Professional Certificate Assignment
 ![IBM Data Science](https://media.licdn.com/dms/image/v2/D4D22AQHjiNdbg6Qbyg/feedshare-shrink_800/B4DZSipl5HG4Ak-/0/1737895600433?e=1750291200&v=beta&t=o2XJh4fJ89Gysgmi9vGIyZlu8qkhX8ifT7Ysd27Z5jw)
 
-
 ## Author
 **ABDULLAH AL Numan**
 
@@ -41,7 +40,61 @@ To reproduce or interact with the project environment:
    ```bash
    git clone https://github.com/your-username/ibm-data-science-certificate.git
    cd ibm-data-science-certificate
+   ```
+
+## Django Project Setup
+
+This repository includes a Django web application to complement the data science projects. Below are the steps to set up and run the Django project.
+
+### Project Structure
+- **Django Project Directory**: `./django_web_dev`
+- **Virtual Environment Directory**: `./venv`
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package installer)
+
+### Setup Instructions
+1. **Clone the Repository** (if not already done):
+   ```bash
+   git clone https://github.com/your-username/ibm-data-science-certificate.git
+   cd ibm-data-science-certificate
+   ```
+
+2. **Activate the Virtual Environment**:
+   - On Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+3. **Navigate to the Django Project Directory**:
+   ```bash
+   cd .\django_web_dev\
+   ```
+
+4. **Install Dependencies**:
+   Ensure you have the required Python packages installed by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Run the Django Development Server**:
+   Start the server with:
+   ```bash
+   py .\manage.py runserver
+   ```
+   - The application will be accessible at `http://127.0.0.1:8000/`.
+   - Press `Ctrl+C` to stop the server.
+
+### Requirements
+The `requirements.txt` file lists all necessary Python packages for the Django project. You can generate or update it using:
+```bash
+pip freeze > requirements.txt
+```
 
 ## License
 This project is developed for educational purposes as part of a Duke University assignment. Redistribution and modification are subject to course guidelines.
-
