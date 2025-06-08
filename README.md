@@ -1,5 +1,5 @@
 # Python and R Project for IBM Data Science Professional Certificate Assignment
-![IBM Data Science](https://media.licdn.com/dms/image/v2/D4D22AQHjiNdbg6Qbyg/feedshare-shrink_800/B4DZSipl5HG4Ak-/0/1737895600433?e=1750291200&v=beta&t=o2XJh4fJ89Gysgmi9vGIyZlu8qkhX8ifT7Ysd27Z5jw)
+![IBM Data Science](https://github.com/itiami/IBM-Data-Science-Professional/blob/remoteBr/django_web_dev/django_web_dev/static/images/IBM.jpg)
 
 ## Author
 **ABDULLAH AL Numan**
