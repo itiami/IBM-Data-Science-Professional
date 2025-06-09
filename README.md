@@ -1,7 +1,7 @@
  
 ![IBM Data Science](https://github.com/itiami/IBM-Data-Science-Professional/blob/remoteBr/django_web_dev/django_web_dev/static/images/IBM.jpg)
 
-## This is a Coursera Project for IBM Data Science Professional Certificate Assignment
+## This is a Coursera Project for - IBM Data Science Professional Certificate Assignment and API Practice
 ### Django Framework and Anaconda Navigator for JupyterLab is used as Dev Tools.
 
 ## Author
@@ -98,6 +98,3 @@ The `requirements.txt` file lists all necessary Python packages for the Django p
 ```bash
 pip freeze > requirements.txt
 ```
-
-## License
-This project is developed for educational purposes as part of a Duke University assignment. Redistribution and modification are subject to course guidelines.
