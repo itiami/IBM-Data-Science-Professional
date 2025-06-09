@@ -1,5 +1,5 @@
  
-![IBM Data Science](https://github.com/itiami/IBM-Data-Science-Professional/blob/remoteBr/django_web_dev/django_web_dev/static/images/IBM.jpg)
+![IBM Data Science](https://github.com/itiami/IBM-Data-Science-Professional/blob/remoteBr/docs/IBM.jpg)
 
 ## This is a Coursera Project for - IBM Data Science Professional Certificate Assignment and API Practice
 #### *Django Framework and Anaconda Navigator for JupyterLab is used as Dev Tools.*
