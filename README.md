@@ -1,5 +1,8 @@
-# Python and R Project for IBM Data Science Professional Certificate Assignment
+ 
 ![IBM Data Science](https://github.com/itiami/IBM-Data-Science-Professional/blob/remoteBr/django_web_dev/django_web_dev/static/images/IBM.jpg)
+
+## This is a Coursera Project for IBM Data Science Professional Certificate Assignment
+### Django Framework and Anaconda Navigator for JupyterLab is used as Dev Tools.
 
 ## Author
 **ABDULLAH AL Numan**
