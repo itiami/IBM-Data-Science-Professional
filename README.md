@@ -51,7 +51,7 @@ To reproduce or interact with the project environment:
 This repository includes a Django web application to complement the data science projects. Below are the steps to set up and run the Django project.
 
 ### Project Structure
-- **Django Project Directory**: `./django_web_dev`
+- **Django config Directory**: `./django_config`
 - **Virtual Environment Directory**: `./venv`
 
 ### Prerequisites
@@ -75,18 +75,25 @@ This repository includes a Django web application to complement the data science
      source venv/bin/activate
      ```
 
-3. **Navigate to the Django Project Directory**:
+3. **Create the Django Project **:
    ```bash
-   cd .\django_web_dev\
+   # Here "django_config" directory will be the setting dir and ". (dot)" means the working direcoty, where the django_config will create
+   (venv) PS C:\Users\numan\OneDrive\Documents\DevProjects\IBM-Data-Science-Professional> python -m django startproject django_config .
    ```
 
-4. **Install Dependencies**:
+4. **To migrate the project
+```bash
+(venv) PS C:\Users\numan\OneDrive\Documents\DevProjects\IBM-Data-Science-Professional> python manage.py migrate   
+```
+
+5. **Install Dependencies**:
    Ensure you have the required Python packages installed by running:
    ```bash
-   pip install -r requirements.txt
+ (venv) PS C:\Users\numan\OneDrive\Documents\DevProjects\IBM-Data-Science-Professional> python -m pip install -r .\requirements.txt  --no-cache-dir 
    ```
 
-5. **Run the Django Development Server**:
+
+6. **Run the Django Development Server**:
    Start the server with:
    ```bash
    py .\manage.py runserver
