@@ -41,9 +41,9 @@ def create_dash_app(server):
     
     
     # Add computation to callback function and return graph
-    def get_graph(entered_year):
+    def get_graph(yr):
         # Select 2019 data
-        df =  airline_data[airline_data['Year']==int(entered_year)]
+        df =  airline_data[airline_data['Year']==int(yr)]
         
         # Group the data by Month and compute average over arrival delay time.
         line_data = df.groupby('Month')['ArrDelay'].mean().reset_index()
@@ -56,7 +56,7 @@ def create_dash_app(server):
         ))
         
         fig.update_layout(title={
-                    'text': f'Average Arrival Delay per Month in <span style="color:blue;"><b>{entered_year}</b></span>',
+                    'text': f'Average Arrival Delay per Month in <span style="color:blue;"><b>{yr}</b></span>',
                     'x': 0.5,  # Center the title
                     'xanchor': 'center'
                     },
