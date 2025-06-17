@@ -9,4 +9,7 @@ def create_app():
     from .dash_interactivity import create_dash_app
     create_dash_app(app)
 
+    from .Dash_wildfire import dash_wildfire_app
+    dash_wildfire_app(app)
+
     return app
