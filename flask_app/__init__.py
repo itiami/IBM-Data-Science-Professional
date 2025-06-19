@@ -12,4 +12,7 @@ def create_app():
     from .Dash_wildfire import dash_wildfire_app
     dash_wildfire_app(app)
 
+    from .iloc_explain import create_iloc_explain_app
+    create_iloc_explain_app(app)
+
     return app
