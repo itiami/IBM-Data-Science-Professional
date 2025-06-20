@@ -1,7 +1,11 @@
 from flask import Flask
+import os
+
 
 def create_app():
     app = Flask(__name__)
+    # to get recognise asset directory globally
+    app.config['ASSET_DIR'] = os.path.join(os.path.dirname(__file__),'assets')
 
     from .routes import main
     app.register_blueprint(main)

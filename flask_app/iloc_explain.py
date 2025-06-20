@@ -2,15 +2,15 @@
 
 import pandas as pd
 import plotly.graph_objects as go
-from dash import Dash, dcc, html
-import dash_table 
+from dash import Dash, dcc, html, dash_table
+from  loadCsv import load_data
 
 def create_iloc_explain_app(server):
     app = Dash(__name__, server=server, url_base_pathname='/iloc/')
 
-    url= "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%202/data/FuelConsumptionCo2.csv"
+    # url= "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%202/data/FuelConsumptionCo2.csv"
 
-    csvDf = pd.read_csv(url)
+    csvDf = pd.read_csv(load_data('FuelConsumptionCo2'))
     dash_table.DataTable(
     columns=[{"name": i, "id": i} for i in csvDf.columns],
     data=csvDf.head().to_dict('records'),
