@@ -1,22 +1,22 @@
 from flask import Flask
-import os
+from .routes import register_routes
 
+# Import Dash apps manually
+from modules.c10_applied_data_science_capstone.dash_interactivity import create_dash_app
+from modules.c10_applied_data_science_capstone.Dash_wildfire import dash_wildfire_app
+from modules.c11_generative_ai.generative_ai import readCsv
 
 def create_app():
     app = Flask(__name__)
-    # to get recognise asset directory globally
-    app.config['ASSET_DIR'] = os.path.join(os.path.dirname(__file__),'assets')
 
-    from .routes import main
-    app.register_blueprint(main)
+    # Flask routes (central or home routes)
+    register_routes(app)
 
-    from  modules.c10_applied_data_science_capstone.dash_interactivity import create_dash_app
+    # Register each Dash app
     create_dash_app(app)
-
-    from modules.c10_applied_data_science_capstone.Dash_wildfire import dash_wildfire_app
     dash_wildfire_app(app)
 
-    from modules.c10_applied_data_science_capstone.iloc_explain import create_iloc_explain_app
-    create_iloc_explain_app(app)
+    # Register additional Flask routes
+    readCsv(app)
 
     return app
