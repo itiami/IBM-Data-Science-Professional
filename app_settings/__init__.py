@@ -10,13 +10,13 @@ def create_app():
     from .routes import main
     app.register_blueprint(main)
 
-    from .dash_interactivity import create_dash_app
+    from  modules.c10_applied_data_science_capstone.dash_interactivity import create_dash_app
     create_dash_app(app)
 
-    from .Dash_wildfire import dash_wildfire_app
+    from modules.c10_applied_data_science_capstone.Dash_wildfire import dash_wildfire_app
     dash_wildfire_app(app)
 
-    from .iloc_explain import create_iloc_explain_app
+    from modules.c10_applied_data_science_capstone.iloc_explain import create_iloc_explain_app
     create_iloc_explain_app(app)
 
     return app

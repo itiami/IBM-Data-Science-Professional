@@ -1,4 +1,4 @@
-from flask_app import create_app  # Import the app factory
+from app_settings import create_app  # Import the app factory
 
 app = create_app()  # Use the factory that initializes both Flask and Dash
 
